@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        div {
+            margin: 0 auto;
+            width: 50%;
+            background-color: rgb(63, 69, 69);
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 10px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 250px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            width: 80%;
+            height: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>Enter the string with numbers to get the sum</span>
+        <br>
+        <hr>
+        <form>
+            <span>Enter the String: </span>
+            <input type="text" id="inpString">
+            <button type="submit" value="Submit" onclick="getSum(event)">Submit</button>
+        </form>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

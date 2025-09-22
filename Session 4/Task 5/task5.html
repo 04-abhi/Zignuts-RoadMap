@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci Generator</title>
+</head>
+<body>
+  <h3>Generate Fibonacci Series</h3>
+  <input type="number" id="count" placeholder="How many numbers?">
+  <button onclick="showSeries()">Show</button>
+  <p id="output"></p>
+
+  <script>
+    function showSeries() {
+      let n = parseInt(document.getElementById("count").value);
+      let series = [];
+      let a = 0, b = 1;
+      for (let i = 0; i < n; i++) {
+        series.push(a);
+        [a, b] = [b, a + b];  // swap logic
+      }
+      document.getElementById("output").innerText = 
+          "Series: " + series.join(", ");
+    }
+  </script>
+</body>
+</html>
